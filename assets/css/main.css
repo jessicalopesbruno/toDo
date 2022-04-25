@@ -1,0 +1,46 @@
+/* comentário: Linha de código que será ignorado */
+
+/* Organizando o arquivo CSS */
+
+/* Limpando o CSS */
+
+/* inherit, initial, unset */
+
+body, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+/* body > div{
+    width: 300px;
+    height: 300px;
+    margin: 5% auto;
+    border: solid 10px red;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #e4e4e4;
+}
+
+/* especificidade. Quanto mais espacífico o seletor, mais importante. */
+@media (min-width: 768px){
+    html body {
+        background-color: unset;
+        color: initial;
+    }
+
+    body {
+        background: red;
+    }
+}
+
