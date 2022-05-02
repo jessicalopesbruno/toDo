@@ -13,5 +13,8 @@
     "node"
   ],
   "author": "Jéssica Lopes Bruno",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
