@@ -1,0 +1,117 @@
+@keyframes fadeUp{
+    from {
+        transform: translateX(-1000px) scale(0.5);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+.box{
+    transform: translateY(100px);
+    animation: fadeUp 1s;
+    animation-iteration-count: 1;
+
+    width: 50%;
+    height: 50vh;
+    border: solid 5px red;
+    margin: 10% auto;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* ________________
+unidades de medida CSS:
+
+px - medida fixa
+
+em - medida relativa, em relação ao tamanho definido no elemento pai,  a largura da letra m no tamanho definido no elemento pai (o padrão é 16px)
+
+rem - medida relativa, root em, mas usa o html como referência e não o elemento pai
+
+porcentagem(%) - relativo em relação ao elemento pai
+_____________________*/
+.item{
+    width: 45px;
+    height: 45px;
+    background: #eee;
+    margin: 1%;
+    font-size: 2rem;
+    font-family: 'Roboto', 'Latro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s; 
+    /* transition sempre na propriedade principal */
+}
+
+/* .box:hover .item{
+    transform: translateX(200px) scale(2) rotate(360deg);
+    border-radius: 50%;;
+} */
+
+.picture{
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    border: solid 1px red;
+    overflow: hidden;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.picture:hover figcaption{
+bottom: 0;
+}
+
+figure > img{
+    width: 100%;
+
+}
+
+/* .item:hover{
+    transform: scale(2);
+    border-radius: 50%;
+    
+} */
+
+/* transform, transition, animation */
+
+
+
+.a{
+color: red;
+/* align-self: flex-start; */
+
+}
+
+.b{
+color: green;
+}
+
+.c{
+color: blue;
+}
+
+figure > figcaption{
+    width: 100%;
+    color: white;
+    background: #333;
+    position: absolute;
+    bottom: -50px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+
+.picture > figure{
+    height: 300px;
+    position: relative;
+
+}

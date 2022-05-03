@@ -40,7 +40,7 @@ Extra extra large (xxl) >= 1400px -->
                             <option value="4">VW</option>
                         </select> <br/>
 
-                        <textarea name="message" cols="73" rows="10"></textarea>
+                        <textarea name="message" id="message" oninput="autoHeight(this)" class="form-control" style="overflow: hidden" cols="20" placeholder="Mensagem" ></textarea>
 
 
                         
@@ -58,6 +58,14 @@ Extra extra large (xxl) >= 1400px -->
         </div>
     </div>
     <script>
+
+        function autoHeight(element){
+            element.style.height = "20px";
+            element.style.height = (element.scrollHeight) + "px";
+        }
+
+        
+
         const opcao = document. querySelectorAll("input[type='radio']");
         const btnSend = document.querySelector("#btn-send");
 
@@ -77,3 +85,7 @@ Extra extra large (xxl) >= 1400px -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>    
 </body>
 </html>
+
+<!-- 
+    webkit
+ -->
